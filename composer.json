@@ -1,0 +1,41 @@
+{
+    "name": "pkalusek/laravel-model-settings",
+    "description": "Simplest way to store model-specific settings/preferences in Laravel",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "settings", "model", "preferences", "configuration"],
+    "authors": [
+        {
+            "name": "Phillip Kalusek",
+            "email": "pkalusek@byte5.de"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2|^8.3",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/database": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pkalusek\\LaravelModelSettings\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pkalusek\\LaravelModelSettings\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pkalusek\\LaravelModelSettings\\SettingsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
